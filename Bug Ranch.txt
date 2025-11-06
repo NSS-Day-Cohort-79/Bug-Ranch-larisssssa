@@ -1,0 +1,31 @@
+title Bug Wrangler Ranch
+
+participant Main
+participant Cattle
+participant Drovers
+# participant Database
+participant Journey
+# participant Utils
+
+
+# Main->Cattle: import roundUp()
+# Main<--Cattle: export roundUp()
+# Main->Drovers: import hireDrovers()
+# Main<--Drovers: export hireDrovers()
+# Main->Journey: import journeyMaker() 
+# Main<--Journey: export journeyMaker()
+
+Main->Drovers: invoke hireDrovers()
+# Drovers->Database: import database
+# Drovers<--Database: export database object
+Main<--Drovers: returns array of drover objects
+
+Main->Cattle: invoke roundup()
+# Cattle->Database: import database
+# Cattle<--Database: export database object
+Main<--Cattle: returns array of strings
+
+Main->Journey: invoke journeyMaker()
+# Journey->Utils: import randomize()
+# Journey<--Utils: export randomized array
+Main<--Journey: returns a randomized array of strings

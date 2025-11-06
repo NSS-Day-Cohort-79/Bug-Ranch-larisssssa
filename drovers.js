@@ -12,6 +12,7 @@ const hireDrovers = (herdSize) => {
         drovers.push(allDrovers[randomHerderId])
     }
 
+    return drovers
 }
 
 module.exports = { hireDrovers }

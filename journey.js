@@ -38,8 +38,8 @@ const journeyMaker = () => {
     for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
         journey.push("forest")
     }
-
-    for (let mountainNumber = 0; mountainNumber < areas.mountain; mountainNumber++) {
+    // spelling
+    for (let mountainNumber = 0; mountainNumber < areas.mountains; mountainNumber++) {
         journey.push("mountain")
     }
 

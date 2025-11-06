@@ -4,11 +4,12 @@ const roundup = (herdSize) => {
     const cattle = []
     const types = database.cattleTypes
 
-    // changed the for loop condition from `counter < size` to `counter < types.size` so the counter works with the number of items in the array being iterated
-    for (let counter = 0; counter < types.size; counter++) {
+    // changed the for loop condition from `counter < size` to `counter < herdSize` argument 
+    for (let counter = 0; counter < herdSize; counter++) {
         const randomType = Math.floor(Math.random() * types.length)
         const animal = types[randomType]
-        cattle.push(animal)
+        // changed from the object animal to string animal breed to be added to cattle array
+        cattle.push(animal.breed)
     }
 
     return cattle

@@ -5,9 +5,10 @@ const createRivers = () => {
     return rivers
 }
 
+//spelling
 const createMountains = () => {
     const mountains = Math.floor(Math.random() * 2) + 1
-    return mauntains
+    return mountains
 }
 
 const createForests = () => {
@@ -22,12 +23,12 @@ const createPlains = () => {
 
 const journeyMaker = () => {
     const journey = []
-
+    // function names corrected
     const areas = {
-        rivers: createRiver(),
-        forests: createForest(),
-        mountains: createMountain(),
-        plains: createPlain()
+        rivers: createRivers(),
+        forests: createForests(),
+        mountains: createMountains(),
+        plains: createPlains()
     }
 
     for (let riverNumber = 0; riverNumber < areas.rivers; riverNumber++) {

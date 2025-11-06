@@ -12,6 +12,7 @@ const hireDrovers = (herdSize) => {
         drovers.push(allDrovers[randomHerderId])
     }
 
+    // added return statement
     return drovers
 }
 

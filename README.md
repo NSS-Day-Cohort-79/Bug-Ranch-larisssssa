@@ -76,23 +76,24 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > The `drovers` variable is an array of drover objects that is returned from the `hireDrovers()` function.
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > In the for of loop, `for (const drover of drovers)`, the `drovers` variable is the array that is being iterated, and `drover` is the currently selected element from the array.
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
    > Your public Loom URL here
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
-      journey.push("forest")
+     journey.push("forest");
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   > In this for loop, the first expression, `let forestNumber = 0;` sets the variable where the loop will start, in this case, 0. The second expression, `forestNumber < areas.forests;`, sets the condition for the loop, in this case, if `forestNumber` is less than `area.forests`, continue the loop. THe third expression, `forestNumber++`, is what is executed after every successful loop is completed, in this case, the variable `forestNumber` will increase by 1.
+   > The code block for this loop `journey.push("forest");` states that the string `"forest"` will be added to the `journey` array one time for each iteration until the for loop stops, once it's condition is no longer met.
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > The `database` variable in the **database** module is an object that has two properties, `cattleTypes` and `drovers`. The `cattleTypes` value is an array of cattle objects, with `id` and `breed` as properties. The `drovers` value is an array of drover objects, with `"id"`, `"first_name"`, `"last_name"`, and `"gender"` properties.
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   > `(herdSize)` is the parameter for the function `hireDrovers()`. The value for `(herdSize)` is provided by the user in the `main.js`. The variable `cattleToDrive` variable is passed as the argument for the `hireDrovers()` function. This value is used to calculate how many drovers will be needed for the journey.
 
 ## When You Are Done
 

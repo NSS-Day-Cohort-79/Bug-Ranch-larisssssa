@@ -49,7 +49,9 @@ const journeyMaker = () => {
     return randomize(journey)
 }
 
+// added the journeyMaker function to the exports
 module.exports = {
     createRivers, createForests,
-    createMountains, createPlains
+    createMountains, createPlains,
+    journeyMaker
 }
